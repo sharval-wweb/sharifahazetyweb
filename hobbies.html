@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Comic+Sans+MS&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    .hobby-box {
+      background-color: #fff0f6;
+      margin: 20px auto;
+      padding: 25px;
+      border: 2px solid #d291ff;
+      border-radius: 15px;
+      width: 95%;
+      max-width: 1000px;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px rgba(210, 145, 255, 0.15);
+      font-family: 'Comic Sans MS', cursive;
+    }
+
+    .hobby-box:hover {
+      background-color: #ffe4fa;
+    }
+
+    .hobby-info {
+      display: none;
+      margin-top: 15px;
+      color: #4a154b;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .image-row img {
+      width: 48%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="image/hobbies.gif" alt="Animated Banner">
+  </div>
+
+  <ul class="navbar">
+    <li><a href="index.html">Homepage</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="myfav.html">My Favourites</a></li>
+    <li><a class="active" href="hobbies.html">Hobbies</a></li>
+    <li><a href="socialmedia.html">Social Media</a></li>
+  </ul>
+
+  <div class="content">
+    <h2 style="text-align: center; color: #d291ff; font-family: 'Comic Sans MS', cursive;">🌸 My Hobbies 🌸</h2>
+    <p style="text-align: center; font-family: 'Poppins', sans-serif;">Click on each box to learn more about what I love to do in my free time!</p>
+
+    <!-- Drawing Hobby -->
+    <div class="hobby-box" onclick="toggleInfo('drawing')">
+      🎨 Digital Drawing
+      <div id="drawing" class="hobby-info">
+        Drawing has always been my safe space. I love using my tablet to sketch anime characters and soft pastel-themed fanart. I often draw characters I admire or even original ones from my imagination. It's a mix of relaxing and emotional for me.
+
+        <br><br><b>Some of my artworks:</b>
+        <div class="image-row">
+          <img src="image/luka.png" alt="Luka">
+          <img src="image/ivan.jpg" alt="Ivan">
+        </div>
+
+        <p style="text-align: center;"><b>✨ Drawing Process:</b></p>
+        <video controls style="width: 100%; max-width: 600px; display: block; margin: 0 auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <source src="video/Luka.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- Gaming Hobby -->
+    <div class="hobby-box" onclick="toggleInfo('gaming')">
+      🎮 Playing Games
+      <div id="gaming" class="hobby-info">
+        I’ve been playing <b>Genshin Impact</b> since 2021 and I absolutely love the open-world fantasy adventure. The characters are amazing (my fav is Razor 🐺), the story is a lot to discover, and the music is really enjoyable. Exploring Teyvat just feels magical. I also love the art and aesthetics in the game.
+
+        <br><br><b>My Genshin Experience:</b>
+        <div class="image-row">
+          <img src="image/genshin1.jpg" alt="Genshin 1">
+          <img src="image/genshin2.png" alt="Genshin 2">
+        </div>
+
+        <video controls style="width: 100%; max-width: 600px; display: block; margin: 0 auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <source src="video/cookie.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- Crochet Hobby -->
+    <div class="hobby-box" onclick="toggleInfo('crochet')">
+      🧶 Crochet
+      <div id="crochet" class="hobby-info">
+        Crochet is one of the coziest things I love doing. I enjoy making tiny plushies, cute keychains, and special handmade gifts for friends and family. 
+        <br><br>I even used to take commissions before! Here’s some I’m really proud of:
+
+        <img src="image/crochet.jpg" alt="Crochet plush" style="width: 90%; max-width: 600px; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (now using style.css) -->
+  <div class="footer">
+    <p>&copy; 2025, @Sharifah Azety. All rights reserved.</p>
+  </div>
+
+  <script>
+    function toggleInfo(id) {
+      const element = document.getElementById(id);
+      element.style.display = element.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

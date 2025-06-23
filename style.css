@@ -1,0 +1,79 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f6; /* soft pink background */
+  color: #2a2a2a;
+}
+
+/* 🎀 Banner */
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid #d291ff; /* cute purple line below */
+}
+
+/* 🖤 Navigation Bar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1f1b24; /* gothic black base */
+  border-bottom: 2px solid #ff8fcb; /* pink accent line */
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: #ffd6f5; /* pastel pink text */
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.navbar li a:hover {
+  background-color: #ffb3e6; /* brighter pink */
+  color: #1f1b24; /* contrast on hover */
+}
+
+.navbar li a.active {
+  background-color: #c77dff; /* pastel purple */
+  color: white;
+  font-weight: bold;
+}
+
+/* 💌 Main Content */
+.content {
+  padding: 20px;
+  background-color: #fffaff; /* soft off-pink */
+  color: #3e3e3e;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ⚰ Footer */
+.footer {
+  background-color: #2e2235; /* blackish purple */
+  color: #ffd6f5;            /* soft pink text */
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  border-top: 2px solid #9d4edd;
+}
+
+.footer a {
+  color: #ff8fcb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #c77dff;
+}

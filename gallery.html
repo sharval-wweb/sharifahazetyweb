@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-heading {
+      font-family: 'Comic Sans MS', cursive;
+      color: #d291ff;
+      background-color: #fff0f6;
+      padding: 10px 20px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 5px #e5baff;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .card-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .birthday-section img,
+    .birthday-card img {
+      width: 220px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border: 2px solid #f3caff;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #d291ff;
+      font-family: 'Comic Sans MS', cursive;
+      margin-top: 50px;
+    }
+
+    .section-desc {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      color: #703570;
+      margin-bottom: 20px;
+    }
+
+    .speedpaint-video {
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .speedpaint-video video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border: 2px solid #f3caff;
+    }
+
+    .footer {
+      background-color: #2e2235;
+      color: #ffd6f5;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      border-top: 2px solid #9d4edd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="image/gallery.gif" alt="Animated Banner">
+  </div>
+
+  <ul class="navbar">
+    <li><a href="index.html">Homepage</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a class="active" href="gallery.html">Gallery</a></li>
+    <li><a href="myfav.html">My Favourites</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="socialmedia.html">Social Media</a></li>
+  </ul>
+
+  <div class="content">
+    <div style="margin-top: 40px; text-align: center;">
+      <h2 class="gallery-heading">Gallery of My Family Members & Me!</h2>
+    </div>
+
+    <div class="card-group">
+      <!-- Cards -->
+      <div class="birthday-card">
+        <img src="image/me.png">
+        <h3>👨‍👧 Sharifah Azety Binti Abdul Malik</h3>
+        <p>20 years old<br>Me!!! 💜</p>
+      </div>
+      <div class="birthday-card">
+        <img src="image/dad.png">
+        <h3>👨‍👧 Abdul Malik Bin Ali</h3>
+        <p>49 years old<br>My loving dad 💖</p>
+      </div>
+      <div class="birthday-card">
+        <img src="image/mom.png">
+        <h3>👩 Hanessah Binti Ebbol</h3>
+        <p>55 years old<br>My caring mom 💖</p>
+      </div>
+      <div class="birthday-card">
+        <img src="image/kakmir.png">
+        <h3>🧕🏻 Sharifah Asmira</h3>
+        <p>25 years old<br>My supporting oldest sister 💖</p>
+      </div>
+      <div class="birthday-card">
+        <img src="image/abg.png">
+        <h3>🧑🏻‍🎨 Syed Akhmal</h3>
+        <p>25 years old<br>My creative older brother 💖</p>
+      </div>
+      <div class="birthday-card">
+        <img src="image/kakna.png">
+        <h3>👩🏻 Syarrifah Suhana Binti Subrata</h3>
+        <p>23 years old<br>My supporting cousin 💖</p>
+      </div>
+      <div class="birthday-card">
+        <img src="image/shasha.png">
+        <h3>👸🏻 Sharafina Adny Binti Chopper</h3>
+        <p>19 years old<br>My hardworking little cousin 💖</p>
+      </div>
+    </div>
+
+    <!-- Birthday Photos -->
+    <h2 class="section-title">🎂 My Birthday Moments</h2>
+    <p class="section-desc">Here are some sweet pictures I took during my birthday celebration! 💕</p>
+
+    <div class="card-group birthday-section">
+      <img src="image/Hadiah.jpg" alt="Birthday 1">
+      <img src="image/Hadiah1.jpg" alt="Birthday 2">
+      <img src="image/Hadiah2.jpg" alt="Birthday 3">
+      <img src="image/Hadiah3.jpg" alt="Birthday 4">
+      <img src="image/Hadiah4.jpg" alt="Birthday 5">
+    </div>
+
+    <!-- Speedpaint Section -->
+    <h2 class="section-title">🎨 My Digital Drawing Speedpaints</h2>
+    <p class="section-desc">Here are some more of my speedpaint videos! 🖌️</p>
+
+    <div class="card-group">
+      <div class="speedpaint-video">
+        <video controls>
+          <source src="video/Ivan.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="speedpaint-video">
+        <video controls>
+          <source src="video/sua.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025, @Sharifah Azety. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
